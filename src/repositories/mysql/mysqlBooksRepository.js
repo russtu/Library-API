@@ -5,6 +5,11 @@ const getAllBooks = async() => {
   return books
 }
 
+const getOneBook = async(bookId) => {
+  const book = await connection.query('SELECT * FROM books WHERE id = ?', [bookId])
+  return book[0]
+}
+
 const saveABook = async(bookData) => {
   const { title, isbn, author, category, publication_date, publisher  } = bookData
   const [book] = await connection.query('INSERT INTO books (title, isbn, author, category, publication_date, publisher) VALUES (?, ?, ?, ?, ?, ?)',
@@ -20,13 +25,14 @@ const modifyABook = async(bookData, bookId) => {
 }
 
 const removeBook = async(bookId) => {
- 
   const bookRemoved = await connection.query('DELETE FROM books WHERE id = ?', [bookId])
   return bookRemoved
 }
 
+
 module.exports = {
   getAllBooks,
+  getOneBook,
   saveABook,
   modifyABook,
   removeBook

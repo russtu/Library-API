@@ -1,10 +1,11 @@
 const router = require('express').Router()
 
-const { getBooks, postBook, putBook, deleteBook } = require('../controllers')
+const { getBooks, postBook, putBook, deleteBook, getABook } = require('../controllers')
 
 
+//GET ONE BOOK
 
-
+router.get('/:bookId', getABook)
 
 //GET ALL BOOKS
 

@@ -6,6 +6,7 @@
 ## Endpoints
 
 -   GET - [/books] - Retorna el listado de libros. / Return the list of books ✅
+-   GET - [/books/:bookId] - Retorna un libro según su id. / Returns a book according to its id. ✅
 -   POST - [/books/saveABook] - Añade un libro. / Add a book. ✅
 -   PUT - [/books/modifyBook/:bookId] - Modifica un libro. / Edit a book. ✅
 -   DELETE - [/books/deleteBook/:bookId] - Borra una libro. / Delete a book. ✅
@@ -36,6 +37,22 @@
         "publication_date": "04/05/1980"
     }
 ]
+
+-GET - [/books/:bookId] - Retorna un libro según su id. / Returns a book according to its id.
+
+  You just have to send ,in the url, the id of the book you want to delete.
+
+  Output example:
+  
+  {
+        "id": 12,
+        "isbn": "9788415140207",
+        "title": "El clan del oso cavernario",
+        "author": "Jeam M. Auel",
+        "category": "Fictional",
+        "publisher": "Maeva ",
+        "publication_date": "04/05/1980"
+    }
 
 
 -POST - [/books/saveABook] - Añade un libro. / Add a book. Example:
