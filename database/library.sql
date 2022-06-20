@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS library;
+CREATE SCHEMA `library`;
+USE library;
+CREATE TABLE books (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  isbn VARCHAR(100) UNIQUE NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  author VARCHAR(100) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  publisher VARCHAR(100) NOT NULL,
+  publication_date DATE NOT NULL
+  );

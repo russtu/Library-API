@@ -1,0 +1,75 @@
+{
+
+  "client": "Thunder Client",
+  "collectionName": "library",
+  "dateExported": "2022-06-20T17:04:33.950Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [{
+      "_id": "0d1c851c-ceb7-4abb-a006-d71c0f6d5f5b",
+      "colId": "cf7fa484-05ca-4470-8461-9aed9421da13",
+      "containerId": "",
+      "name": "getAllBooks",
+      "url": "http://localhost:3000/books",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-06-17T16:14:28.524Z",
+      "modified": "2022-06-17T16:14:44.879Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "4f890cb7-0e16-467d-b322-295cc97d0b44",
+      "colId": "cf7fa484-05ca-4470-8461-9aed9421da13",
+      "containerId": "",
+      "name": "postBook",
+      "url": "http://localhost:3000/books/saveABook",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-06-17T19:53:25.257Z",
+      "modified": "2022-06-17T19:55:43.975Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "  {\n    \"isbn\": \"34565432\",\n    \"title\": \"jaguar\",\n    \"author\": \"samaniego\",\n    \"category\": \"drama\",\n    \"publisher\": \"tolkien \",\n    \"publication_date\": \"1967-06-08\"\n  }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "27bbf59e-e9b6-4f56-9a48-eb174ce0ac7e",
+      "colId": "cf7fa484-05ca-4470-8461-9aed9421da13",
+      "containerId": "",
+      "name": "putBook",
+      "url": "http://localhost:3000/books/modifyBook/1",
+      "method": "PUT",
+      "sortNum": 60000,
+      "created": "2022-06-17T20:08:15.555Z",
+      "modified": "2022-06-18T19:25:54.821Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "  {\n    \"isbn\": \"34522222\",\n    \"title\": \"perro\",\n    \"author\": \"russtu\",\n    \"category\": \"drama\",\n    \"publisher\": \"tolkien \",\n    \"publication_date\": \"1967-06-08\"\n  }",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "ef21f40f-b544-46b2-b031-af2aaab6e8c3",
+      "colId": "cf7fa484-05ca-4470-8461-9aed9421da13",
+      "containerId": "",
+      "name": "deleteBook",
+      "url": "http://localhost:3000/books/deleteBook/2",
+      "method": "DELETE",
+      "sortNum": 70000,
+      "created": "2022-06-18T19:26:37.160Z",
+      "modified": "2022-06-18T19:36:18.687Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}
