@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "20cbcba3-fced-449e-a3cc-92ed261209cf",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"isbn\": \"9788415140207\",\n        \"title\": \"el clan del oso cavernario\",\n        \"author\": \"Jeam M. Auel\",\n        \"category\": \"Fictional\",\n        \"publisher\": \"Maeva \",\n        \"publication_date\": \"04/05/1980\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/saveABook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"saveABook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"isbn\": \"9788415140207\",\n        \"title\": \"el clan del oso cavernario\",\n        \"author\": \"Jeam M. Auel\",\n        \"category\": \"Fictional\",\n        \"publisher\": \"Maeva \",\n        \"publication_date\": \"1980-05-04\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/modifyBook/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"modifyBook",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/deleteBook/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"deleteBook",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
