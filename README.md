@@ -40,7 +40,7 @@
 
 -GET - [/books/:bookId] - Retorna un libro según su id. / Returns a book according to its id.
 
-  You just have to send ,in the url, the id of the book you want to delete.
+  You just have to send ,in the url, the id of the book you want to show.
 
   Output example:
   
